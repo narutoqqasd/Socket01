@@ -1,5 +1,5 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
@@ -8,7 +8,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="接收到的信息" />
+        android:layout_marginLeft="10dp"
+        android:text="消息框" />
 
     <TextView
         android:id="@+id/tv1"
@@ -17,36 +18,35 @@
         android:singleLine="false" 
         android:scrollbars="vertical"
         android:maxLines="10"
+        android:layout_margin="10dp"
+        android:background="#F0F8FF"
         android:text="" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="请输入发送内容" />
-
-    <EditText
+   <EditText
         android:id="@+id/editText1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" >
+        android:ems="10" 
+        android:background="@drawable/textview_border">
 
         <requestFocus />
-    </EditText>
+ </EditText>
+  
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content" 
+        android:orientation="horizontal" 
         android:paddingTop="20dp">
+         
+   
          <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
-        android:background="#F0F8FF"
-        android:text="发送123" />
-          <Button
+        android:text="发送" />
+         <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         android:text="设置" />
         
     </LinearLayout>
-
+ 
   
 
 </LinearLayout>
